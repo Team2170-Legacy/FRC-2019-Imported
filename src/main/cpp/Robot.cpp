@@ -35,6 +35,8 @@ bool Robot::RioCamera;
  * 
  */
 void Robot::RobotInit() {
+	printf("Hello There\n");
+
 	int DriveMode = frc::Preferences::GetInstance()->GetInt("Drive Mode", 1);
 	if (DriveMode == 0 || DriveMode == 2) {
 		TankDrive = true;
